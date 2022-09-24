@@ -2,7 +2,14 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'com.google.gms.google-services'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+    id 'androidx.navigation.safeargs.kotlin'
 }
+
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'androidx.navigation.safeargs.kotlin'
 
 // para poder generar un enlace dírecto entre la vista (xml) y el código (.kt)
 android.buildFeatures.viewBinding true
@@ -51,4 +58,15 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    //Para el uso de anotaciones @Entity y demas
+    annotationProcessor('androidx.room:room-compiler:2.4.3')
+    kapt 'androidx.room:room-compiler:2.4.3'
+    implementation('androidx.room:room-ktx:2.4.3')
+
+    //Mover datos  entre los fragmentos
+    implementation('androidx.navigation:navigation-fragment-ktx:2.5.2')
+    implementation('androidx.navigation:navigation-ui-ktx:2.5.2')
+    implementation('androidx.navigation:navigation-dynamic-features-fragment:2.5.2')
+
 }

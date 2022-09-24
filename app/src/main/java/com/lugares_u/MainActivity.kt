@@ -62,8 +62,27 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun hacelogin() {
-        TODO("Not yet implemented")
+        val  correo = binding.etCorreo.text.toString()
+        val  clave = binding.etClave.text.toString()
+
+        auth.signInWithEmailAndPassword(correo,clave).addOnCompleteListener(this){ task ->
+            if(task.isSuccessful){
+                val user = auth.currentUser
+                refresca(user)
+            }
+            else{ // si no hizo el registro....
+                Toast.makeText(baseContext,getString(R.string.tv_fallo), Toast.LENGTH_LONG).show()
+                refresca(null)
+
+            }
+        }
     }
 
+    override fun onStart() //se ejecuta cuando la app esta en la pantalla
+    {//login automantico
+        super.onStart()
+        val usuario = auth.currentUser
+        refresca(usuario)
+    }
 
 }
