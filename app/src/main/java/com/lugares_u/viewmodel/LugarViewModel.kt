@@ -18,17 +18,10 @@ class LugarViewModel(application: Application) : AndroidViewModel(application)
         getLugares = repository.getLugares
     }
 
-    suspend fun addLugar(lugar: Lugar)
+    fun saveLugar(lugar: Lugar)
     {
-        viewModelScope.launch { repository.addLugar(lugar) }
+        viewModelScope.launch { repository.saveLugar(lugar) }
     }
-
-
-    suspend fun updateLugar(lugar: Lugar)
-    {
-        viewModelScope.launch { repository.updateLugar(lugar) }
-    }
-
 
     suspend fun deleteLugar(lugar: Lugar)
     {
