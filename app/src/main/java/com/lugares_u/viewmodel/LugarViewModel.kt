@@ -23,7 +23,7 @@ class LugarViewModel(application: Application) : AndroidViewModel(application)
         viewModelScope.launch { repository.saveLugar(lugar) }
     }
 
-    suspend fun deleteLugar(lugar: Lugar)
+    fun deleteLugar(lugar: Lugar)
     {
         viewModelScope.launch { repository.deleteLugar(lugar) }
     }
