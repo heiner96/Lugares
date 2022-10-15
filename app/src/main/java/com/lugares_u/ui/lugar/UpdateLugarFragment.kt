@@ -62,10 +62,28 @@ class UpdateLugarFragment : Fragment() {
         binding.btWeb.setOnClickListener{
             verWeb()
         }
+        binding.btLocation.setOnClickListener{
+            verMapa()
+        }
 
         return binding.root
 
     }
+
+    private fun verMapa()
+    {
+        val latitud = binding.tvLatitud.text.toString().toDouble()
+        val longitud = binding.tvLongitud.text.toString().toDouble()
+        if( latitud.isFinite() && longitud.isFinite() ){ //puedo ver el lugar en el mapa
+            val uri = Uri.parse("geo:$latitud , $longitud?z14")
+            val intent = Intent(Intent.ACTION_VIEW,uri)
+            startActivity(intent)
+        }
+        else{
+            Toast.makeText(requireContext(),getString(R.string.msg_data),Toast.LENGTH_LONG).show()
+        }
+    }
+
     private fun verWeb()
     {
         val para = binding.etWeb.text.toString()
