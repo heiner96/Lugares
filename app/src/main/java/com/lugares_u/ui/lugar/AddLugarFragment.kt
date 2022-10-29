@@ -79,7 +79,7 @@ class AddLugarFragment : Fragment() {
             val latitud = binding.tvLatitud.text.toString().toDouble()
             val longitud = binding.tvLongitud.text.toString().toDouble()
             val altura = binding.tvAltura.text.toString().toDouble()
-            val lugar = Lugar(0,nombre,correo,web,telefono,latitud,longitud,altura,"","")
+            val lugar = Lugar("",nombre,correo,web,telefono,latitud,longitud,altura,"","")
             lugarViewModel.saveLugar(lugar)
             Toast.makeText(requireContext(),getText(R.string.msg_lugar_added),Toast.LENGTH_SHORT)
             findNavController().navigate(R.id.action_addLugarFragment_to_nav_lugar)
