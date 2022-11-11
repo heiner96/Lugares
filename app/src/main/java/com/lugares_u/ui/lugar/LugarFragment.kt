@@ -1,5 +1,6 @@
 package com.lugares_u.ui.lugar
 
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
