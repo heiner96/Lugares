@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Lugares_U</string>
-    <string name="tv_correo">Correo</string>
-    <string name="tv_clave">Contraseña</string>
+    <string name="tv_correo">Email</string>
+    <string name="tv_clave">Password</string>
     <string name="tv_fallo">Error...</string>
     <string name="title_activity_principal">Principal</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -11,21 +12,21 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_lugar">Lugares</string>
+    <string name="menu_lugar">Places</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="msg_nombre">Nombre del lugar</string>
+    <string name="msg_nombre">Name</string>
     <string name="msg_correo">eMail (lugar@xxxx.xxx)</string>
-    <string name="msg_telefono">Teléfono (9999-9999)</string>
-    <string name="msg_web">Sitio WEB</string>
-    <string name="msg_add_lugar">Agregar Lugar</string>
-    <string name="bt_uptate_lugar">Actualizar Lugar</string>
-    <string name="msg_lugar_added">Lugar Agregado…</string>
-    <string name="msg_delete_lugar">Eliminar Lugar…</string>
-    <string name="msg_lugar_updated">Lugar Actualizado…</string>
+    <string name="msg_telefono">Phone (9999-9999)</string>
+    <string name="msg_web">WEB Site</string>
+    <string name="msg_add_lugar">Add</string>
+    <string name="bt_uptate_lugar">Update place</string>
+    <string name="msg_lugar_added">Add place…</string>
+    <string name="msg_delete_lugar">Delete place…</string>
+    <string name="msg_lugar_updated">Updated place…</string>
     <string name="msg_lugar_deleted">Lugar Eliminado…</string>
     <string name="msg_data">Faltan Datos!</string>
     <string name="msg_seguro_borrado">¿Está seguro de eliminar el lugar :</string>
@@ -45,22 +46,19 @@
     <string name="msg_datos">Faltan datos</string>
     <string name="error">Error</string>
 
-       <string name="msgEscucharAudio">Escuchar nota de audio</string>
-        <string name="msg_imagen">Imagen del lugar</string>
-        <string name="graba_pausa">Graba o pausa grabación</string>
-        <string name="escuchaPlay">Escucha grabación</string>
-        <string name="delete_nota">Borra nota de audio</string>
-        <string name="play_nota">Escuchar nota de audio</string>
-        <string name="rec_stop_nota">Graba o detiene nota de audio</string>
-        <string name="tomar_foto">Tomar foto</string>
-        <string name="rotar_l">Rotar a la izquierda</string>
-        <string name="rotale_r">Rota a la derecha</string>
-        <string name="msg_graba_audio">Grabando nota de audio</string>
-        <string name="msg_detener_audio">Nota de audio detenida</string>
-        <string name="msg_subiendo_audio">Subiendo Nota Audio</string>
-        <string name="msg_subiendo_imagen">Subiendo imagen</string>
-        <string name="todo">Pendiente</string>
-
-        <string name="default_web_client_id_r" translatable="false">270586956590-7755bru7s14f4g8u6efvud4pmifmmu1a.apps.googleusercontent.com</string>
-
+    <string name="msgEscucharAudio">Escuchar nota de audio</string>
+    <string name="msg_imagen">Imagen del lugar</string>
+    <string name="graba_pausa">Graba o pausa grabación</string>
+    <string name="escuchaPlay">Escucha grabación</string>
+    <string name="delete_nota">Borra nota de audio</string>
+    <string name="play_nota">Escuchar nota de audio</string>
+    <string name="rec_stop_nota">Graba o detiene nota de audio</string>
+    <string name="tomar_foto">Tomar foto</string>
+    <string name="rotar_l">Rotar a la izquierda</string>
+    <string name="rotale_r">Rota a la derecha</string>
+    <string name="msg_graba_audio">Grabando nota de audio</string>
+    <string name="msg_detener_audio">Nota de audio detenida</string>
+    <string name="msg_subiendo_audio">Subiendo Nota Audio</string>
+    <string name="msg_subiendo_imagen">Subiendo imagen</string>
+    <string name="todo">Pendiente</string>
 </resources>
